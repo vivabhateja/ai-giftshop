@@ -266,18 +266,13 @@ button {
     border: none;
     cursor: pointer;
 }
-/* ... (previous CSS code) ... */
 
-/* Styling for the "My Gift Advisor" chatbot */
-/* ... (previous CSS code) ... */
-
-/* Styling for the chatbot on the right */
 .gift-advisor {
     position: absolute;
     top: 30%;
     bottom:100px;
     right: 0;
-    width: 320px; /* Adjust width as needed */
+    width: 320px; 
     background:url('chatbotback.jpg');
     height: 400px;
     overflow-y: auto;
@@ -297,10 +292,3 @@ button {
     border-radius: 5px;
 }
 
-/* ... (remaining CSS code) ... */
-
-
-/* ... (remaining CSS code) ... */
-
-
-/* Add more CSS styles as needed */
