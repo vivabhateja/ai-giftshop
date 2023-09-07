@@ -1,0 +1,57 @@
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+body{
+    background:url('recipientbackground.jpg')  no-repeat center center/cover;
+}
+
+header h1 {
+    font-size: 50px;
+    
+}
+#relationship{
+    background-color: lavender;
+    color:black;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 10%;
+
+}
+#occasion{
+    background-color: lavender;
+    color:black;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 10%;
+
+}
+#age{
+    background-color: lavender;
+    color:black;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 10%;
+
+}
+#get-ideas{
+    
+    color:black;
+    text-align: center;
+    padding: 10px 0px;
+
+    margin: 10%;
+
+}
+#btn{
+    color:black;
+    background-color: plum;
+    border-radius: 10%;
+
+}
+#btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px goldenrod;
+}

@@ -1,0 +1,306 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    
+    color:black;
+    text-align: center;
+    padding: 10px 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1 {
+    font-size: 50px;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    position: sticky;
+    top:0;
+}
+.navbar ul{
+    display:flex;
+    list-style: none;
+    margin: 20px 0px;
+
+}
+.navbar ul li{
+
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding:8px 25px;
+    transition:all .5s ease;
+}
+
+
+
+
+
+
+
+.navbar ul li a:hover{
+    background-color:aliceblue;
+    color:white;
+    box-shadow: 0 0 10px white;
+    color: black;;
+}
+#home{
+    display:flex;
+    flex-direction:column;
+    background-color:rgba(0,0,0,0.5);
+    height:840px;
+    justify-content:center;
+    align-items:center;
+    color:white;
+
+}
+#home::before{
+    content: "";
+    position:absolute;
+    top:0;
+    
+    left:0;
+    background:url('gift1.jpg') no-repeat center center/cover;
+    height: 900px;
+
+    width:100%;
+    z-index:-1;
+    opacity:0.8;
+}
+#button{
+    align-self: center;
+    width:50px;
+    margin:1px;
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-underline-position: none;
+}
+#button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px yellow;
+}
+
+
+main{
+    display:flex;
+    
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left:10%
+
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#button{
+    align-self: center;
+    width:350px;
+    margin:350px;
+    background-color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-underline-position: none;
+}
+
+.headings{
+    font-family: Century;
+    font-size:2 rem;
+    text-align: justify;
+    margin:40px 0px;
+}
+#about{
+    display:flex
+    flex-direction:column;
+    box-sizing:border-box;
+    padding:10px;
+    margin-bottom:1px;
+    background-color:rgba(0,5,0,0.9);
+    color:white;
+
+}
+#Products{
+    display:flex;
+    flex-direction:column;
+    padding:20px;
+    background-color: rgba(0,0,0,0.9);
+    color:white;margin-bottom: 1px;
+}
+.row{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display:flex;
+    
+    flex-direction:column;
+    width:350px;
+    height:350px;
+    border:1px solid black;
+    margin:10px;
+    align-items:center;
+    text-align:justify;
+    padding:10px;
+    border-radius:15px;
+    
+   
+    background-size:100% 200% ;
+    transition:all .8s;
+}
+.box:hover{
+    background-position:left bottom;
+    color:red;
+    border:none;
+    box-shadow:0px 0px 20px pink;
+}
+.box img{
+    width:250px;
+    height:250px;
+    
+    padding:10px;
+
+}
+#contact{
+    display:flex;
+    flex-direction: column;
+    box-sizing:border-box;
+    background-color: rgba(0,0,0,0.9);
+    color:white;
+    align-items: center;
+
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 10px 0px;
+    align-content: center;
+
+
+
+}
+.input{
+    padding:12px;
+    margin:15px;
+    width:30%;
+    border:none;
+    outline:none;
+
+
+}
+#msg{
+    width:20%;
+    padding:10px;
+    margin:15px;
+    border:none;
+    outline:none;
+}
+#send{
+    align-self: center;
+    width:50px;
+    margin:1px;
+}
+
+#send:hover{
+    cursor:pointer;
+    box-shadow: 0 0 10px antiquewhite;
+}
+
+
+
+
+
+.chat-container {
+    width:250px;
+    height: 400px;
+    background-color: antiquewhite;
+    background:url('chatbotback.jpg') no-repeat center center/cover;
+}
+
+#chat-messages {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+#user-input {
+    width: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    border :darkred;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+/* ... (previous CSS code) ... */
+
+/* Styling for the "My Gift Advisor" chatbot */
+/* ... (previous CSS code) ... */
+
+/* Styling for the chatbot on the right */
+.gift-advisor {
+    position: absolute;
+    top: 30%;
+    bottom:100px;
+    right: 0;
+    width: 320px; /* Adjust width as needed */
+    background:url('chatbotback.jpg');
+    height: 400px;
+    overflow-y: auto;
+    border-left: 5px pink;
+}
+
+.gift-advisor .chat-container {
+    padding: 20px;
+    position:relative;
+}
+
+/* Styling for chatbot messages in the main section */
+.bot-message-main {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* ... (remaining CSS code) ... */
+
+
+/* ... (remaining CSS code) ... */
+
+
+/* Add more CSS styles as needed */

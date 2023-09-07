@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gift Shop</title>
+</head>
+<body>
+    <header>
+        <h1>Gift It</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about us">About Us</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">GIFT IT</h1>
+            <a button type="button" id="button" href="Recipient.html">
+                SHOP NOW
+            </a>
+        </div>
+    </section>
+    <section id="products">
+        <h1 class="headings">Products</h1>
+        <div class="row">
+            <div class="box">
+                <img src="birthdaygiftmain.jpeg" alt="">
+                <h1 class="headings">Birthday Gifts</h1>
+                
+            </div>
+            <div class="box">
+                <img src="anniversarygiftmain.jpeg" alt="">
+                <h1 class="headings"> Anniversary Gifts</h1>
+                
+            </div>
+            <div class="box">
+                <img src="christmasgiftmain.jpeg" alt="" >
+                <h1 class="headings">Christmas Gifts</h1>
+                
+            </div>
+            <a button type="button" id="viewmore" href="Recipient.html" style="text-align: justify;" >
+                <div class="box">
+                    view more
+                
+               
+                
+                    <img src="giftview more.jpg" alt="" ></div>
+                    
+                
+            </a>
+            
+                
+
+            
+        </div>
+    </section>
+    <section id="about us">
+        <h1 class="headings">About Us</h1>
+        <div id="about">
+            <p>Gift It is a game-changing brand that reimagines the way we approach gift-giving through the integration of cutting-edge AI technology. With Gift It, the art of choosing and presenting the perfect gift becomes an effortless and delightfully personalized experience. By harnessing the power of artificial intelligence, Gift It's platform provides users with tailored recommendations, whether they're searching for a heartfelt birthday present, a unique anniversary gift, or a surprise for any special occasion. With NLP-driven chatbots for intuitive interactions and visual search capabilities for discovering one-of-a-kind items, Gift It ensures that every gift carries a personal touch. The brand's commitment to privacy, security, and continuous enhancement of its AI capabilities sets it apart, making Gift It the ultimate destination for thoughtful and meaningful gift selection. In a world where meaningful connections matter more than ever, Gift It transforms gift-giving into a memorable and heartwarming experience.</p>
+        </div>
+       
+        
+    </section>
+    
+    <section id="contact">
+        <h1 class="headings">Contact</h1>
+        <form action="" class="form"></form>
+            <input type="text" name="name" class="input" placeholder="Enter Your Name">
+            <input type="email" name="email" class="input" placeholder="Enter Your Email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+    </section>
+    
+
+    <main>
+        <section class="search-bar">
+            <input type="text" id="product-search" placeholder="Search for gifts...">
+            <button onclick="searchProducts()">Search</button>
+        </section>
+       
+
+        
+        <!-- Add the chatbot container -->
+    
+    </main>
+    <!-- ... (previous HTML code) ... -->
+
+<aside class="gift-advisor">
+    <div class="chat-container">
+        <div id="gift-advisor-chat"></div>
+        <input type="text" id="gift-advisor-input" placeholder="Ask for gift recommendations...">
+        <button onclick="requestGiftRecommendations()">Ask</button>
+        <!-- Add a button for speaking the chatbot's response -->
+        <button id="speak-button" onclick="speakResponse()" disabled>Speak</button>
+    </div>
+</aside>
+<!-- Add an image upload feature in your HTML -->
+
+
+
+<!-- ... (remaining HTML code) ... -->
+
+
+    <footer>
+        <p>&copy; 2023 Gift Shop</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
